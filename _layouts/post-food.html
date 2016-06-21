@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="hero__container">
+  <div class="hero__image-container">
+    <div class="hero__image" style="background: url('/images/posts/{{page.file_name}}/{{ page.hero_image }}') no-repeat; background-size: cover; background-position: 50%;"></div>
+    <div class="image__overlay"></div>
+  </div>
+  <div class="hero__info-container">
+    <div class="hero__info">
+      <div class="hero__title">{{page.title}}</div>
+      <div class="hero__date">{{page.date}}</div>
+    </div>
+  </div>
+</div>
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="wrapper">
+    <div class="post-content" itemprop="articleBody">
+      {{ content }}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,63 @@
+.hero {
+  &__container {
+    height: 60vw;
+    max-height: 625px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 625px;
+
+    &-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__info-container {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__info {
+    position: relative;
+    display: table-cell;
+    vertical-align: bottom;
+    bottom: 75px;
+    left: 75px;
+    color: #fff;
+  }
+
+  &__title {
+    font-size: 50px;
+  }
+}
+
+.image {
+  &__overlay {
+    background-image: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.post-content {
+  color: #69737D;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
