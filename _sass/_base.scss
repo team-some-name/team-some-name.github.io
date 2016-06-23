@@ -8,8 +8,6 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
@@ -24,8 +22,6 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal;
 }
-
-
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -153,25 +149,14 @@ pre {
   }
 }
 
-
-
 /**
  * Wrapper
  */
 .wrapper {
-  max-width: 750px;
   margin: 0 auto;
   padding: 0 20px;
   @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: 750px;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
 }
-
-
 
 /**
  * Clearfix
@@ -184,8 +169,6 @@ pre {
     clear: both;
   }
 }
-
-
 
 /**
  * Icons

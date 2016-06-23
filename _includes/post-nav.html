@@ -1,23 +1,25 @@
 <div class="post-nav">
   <div class="wrapper">
-    <div class="nav-block">
-      {% if page.previous.url %}
-        <div class="nav-block__title nav-block__title--prev">Previous Post</div>
-        <a class="prev" href="{{page.previous.url}}">
-          <img src="/images/posts/{{page.previous.file_name}}/{{ page.previous.hero_image }}">
-        </a>
-        <a class="prev" href="{{page.previous.url}}">{{page.previous.title}}</a>
-      {% endif %}
-    </div>
-    <div class="nav-block"></div>
-    <div class="nav-block">
-      {% if page.next.url %}
-        <div class="nav-block__title nav-block__title--prev">Next Post</div>
-        <a class="next" href="{{page.next.url}}">
-          <img src="/images/posts/{{page.next.file_name}}/{{ page.next.hero_image }}">
-        </a>
-        <a class="next" href="{{page.next.url}}">{{page.next.title}}</a>
-      {% endif %}
+    <div class="grid grid--full">
+      <div class="nav-block grid__item desk--one-third">
+        {% if page.previous.url %}
+          <div class="nav-block__title nav-block__title--prev">Previous Post</div>
+          <a class="prev" href="{{page.previous.url}}">
+            <img src="/images/posts/{{page.previous.file_name}}/{{ page.previous.hero_image }}">
+          </a>
+          <a class="prev" href="{{page.previous.url}}">{{page.previous.title}}</a>
+        {% endif %}
+      </div>
+      <div class="nav-block grid__item desk--one-third"></div>
+      <div class="nav-block grid__item desk--one-third">
+        {% if page.next.url %}
+          <div class="nav-block__title nav-block__title--prev">Next Post</div>
+          <a class="next" href="{{page.next.url}}">
+            <img src="/images/posts/{{page.next.file_name}}/{{ page.next.hero_image }}">
+          </a>
+          <a class="next" href="{{page.next.url}}">{{page.next.title}}</a>
+        {% endif %}
+      </div>
     </div>
   </div>
 </div>
