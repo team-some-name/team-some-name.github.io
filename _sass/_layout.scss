@@ -96,6 +96,7 @@
       position: absolute;
       left: -32px;
       opacity: 0;
+      z-index: 1; //Create variables for this
       -webkit-transition: all 1s;
       -moz-transition: all 1s;
       -ms-transition: all 1s;
@@ -194,7 +195,6 @@
   .wrapper {
     width: 100%;
     max-width: 1200px;
-    padding: 0;
   }
 
   .nav-block {

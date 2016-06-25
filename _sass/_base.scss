@@ -65,7 +65,6 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
   list-style: none;
   overflow: auto;
 }
@@ -157,7 +156,6 @@ pre {
  */
 .wrapper {
   margin: 0 auto;
-  padding: 0 20px;
   @extend %clearfix;
 }
 

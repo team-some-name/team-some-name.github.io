@@ -3,15 +3,13 @@ layout: default
 ---
 
 <div class="list__posts-header">
-  <div class="wrapper">
-    {% for post in site.posts limit:1 %}
-      <!-- this is for future if featured is not always first one -->
-      {% if post.featured == true %}
-          <img src="/images/posts/{{post.file_name}}/{{ post.hero_image }}">
-          {{ post.title }}
-      {% endif %}
-    {% endfor %}
-  </div>
+  {% for post in site.posts limit:1 %}
+    <!-- this is for future if featured is not always first one -->
+    {% if post.featured == true %}
+        <img src="/images/posts/{{post.file_name}}/{{ post.hero_image }}">
+        {{ post.title }}
+    {% endif %}
+  {% endfor %}
 </div>
 
 <div class="list__posts">
