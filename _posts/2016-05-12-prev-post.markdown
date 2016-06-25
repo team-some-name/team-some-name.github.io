@@ -5,6 +5,7 @@ date:   2016-05-13 16:27:59 -0400
 categories: jekyll update
 file_name: 2016-05-12-prev-post
 hero_image: header_photo.jpg
+featured: false
 ---
 Here’s a cool trick that my friend Amr Tahtawi showed me a while ago that I keep using for my light-painting pictures.
 

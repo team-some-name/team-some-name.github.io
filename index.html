@@ -2,18 +2,39 @@
 layout: default
 ---
 
-<div class="home">
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+<div class="list__posts-header">
+  <div class="wrapper">
+    {% for post in site.posts limit:1 %}
+      <!-- this is for future if featured is not always first one -->
+      {% if post.featured == true %}
+          <img src="/images/posts/{{post.file_name}}/{{ post.hero_image }}">
+          {{ post.title }}
+      {% endif %}
     {% endfor %}
-  </ul>
+  </div>
+</div>
+
+<div class="list__posts">
+  <div class="wrapper">
+    <h1 class="page-heading">Posts</h1>
+
+    <ul class="post-list">
+      {% for post in paginator.posts offset:1 %}
+        <li>
+          <div class="grid--full">
+            <div class="grid__item desk--one-half">
+              <img src="/images/posts/{{post.file_name}}/{{ post.hero_image }}">
+            </div>
+            <div class="grid__item desk--one-half">
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+              <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>

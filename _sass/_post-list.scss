@@ -1,0 +1,13 @@
+.list__posts {
+  &-header {
+    .wrapper {
+      width: 100%;
+      max-width: 1200px;
+    }
+  }
+
+  .wrapper{
+    width: 100%;
+    max-width: 750px;
+  }
+}
