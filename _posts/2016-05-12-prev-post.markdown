@@ -2,7 +2,7 @@
 layout: post-food
 title:  "Prev"
 date:   2016-05-13 16:27:59 -0400
-categories: jekyll update
+categories: food
 file_name: 2016-05-12-prev-post
 hero_image: header_photo.jpg
 featured: false
