@@ -9,8 +9,8 @@ layout: default
   </div>
   <div class="hero__info-container">
     <div class="hero__info">
-      <div class="hero__title">{{page.title}}</div>
-      <div class="hero__date">{{page.date}}</div>
+      <div class="hero__title">{{ page.title }}</div>
+      <div class="hero__date">{{ page.date | date: "%b %-d, %Y" }}</div>
     </div>
   </div>
 </div>

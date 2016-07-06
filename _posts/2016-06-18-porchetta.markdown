@@ -1,6 +1,6 @@
 ---
 layout: post-food
-title:  "Porchetta & Co."
+title:  "Eats #3: Chipotle"
 date:   2016-05-13 16:27:59 -0400
 categories: jekyll update
 file_name: 2016-06-18-porchetta

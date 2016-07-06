@@ -7,8 +7,49 @@
     margin: 0 auto;
   }
 
-  .wrapper{
+  .wrapper {
     width: 100%;
     max-width: 750px;
+  }
+
+  .posts {
+
+    &__item {
+      padding: 20px 0;
+
+      .post {
+
+        &__header-image {
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+
+        &__content {
+          padding-top: 20px;
+
+          @include media-query($on-desk) {
+            padding-top: 0;
+            padding-left: 30px;
+          }
+        }
+
+        &__title {
+          font-size: 34px;
+          line-height: 40px;
+
+          a {
+            color: #35363a;
+            font-weight: bold;
+            text-decoration: none;
+
+            &:hover {
+              color: #7c8084;
+            }
+          }
+        }
+      }
+    }
+
   }
 }
