@@ -2,9 +2,11 @@ $(document).ready(function() {
 
   function StickyNav(initialNavHeight) {
     if ($(window).scrollTop() > initialNavHeight) {
-      $('.site-nav').addClass('sticky');
       $('.logo').addClass('hidden');
+      $('.site-nav').addClass('sticky');
+      $('.site-header').addClass('sticky');
     } else if ($(window).scrollTop() < initialNavHeight) {
+      $('.site-header').removeClass('sticky');
       $('.site-nav').removeClass('sticky');
       $('.logo').removeClass('hidden');
     }
