@@ -30,7 +30,12 @@ layout: default
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
               </div>
               <div class="post__meta">
+                <span class="post__author">by {{ post.author }} &bull; </span>
+                <span class="post__category">{{ post.categories }} &bull; </span>
                 <span class="post__date">{{ post.date | date: "%b %-d, %Y" }}</span>
+              </div>
+              <div class="post__excerpt">
+                {{ post.excerpt }}
               </div>
             </div>
           </div>

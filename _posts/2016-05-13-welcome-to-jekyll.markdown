@@ -2,7 +2,8 @@
 layout: post-food
 title:  "Eats #2: Porchetta & Co."
 date:   2016-05-13 16:27:59 -0400
-categories: jekyll update
+author: Someone wooo
+categories: photography
 file_name: 2016-05-13-welcome-to-jekyll
 hero_image: header_photo.jpg
 featured: false

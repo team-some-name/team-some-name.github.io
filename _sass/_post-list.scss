@@ -38,6 +38,7 @@
         &__title {
           font-size: 34px;
           line-height: 40px;
+          margin-bottom: 5px;
 
           a {
             color: #35363a;
@@ -48,6 +49,24 @@
               color: #7c8084;
             }
           }
+        }
+
+        &__meta {
+          color: #69737D;
+          font-weight: 300;
+          margin-bottom: 20px;
+        }
+
+        &__category {
+          text-transform: capitalize;
+        }
+
+        &__excerpt {
+          color: #69737D;
+          font-size: 17px;
+          font-weight: 300;
+          line-height: 1.5;
+          letter-spacing: 0.5px;
         }
       }
     }

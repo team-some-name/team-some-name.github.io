@@ -2,6 +2,7 @@
 layout: post-food
 title:  "Eats #1: Something"
 date:   2016-05-13 16:27:59 -0400
+author: Someone wooo
 categories: food
 file_name: 2016-05-12-prev-post
 hero_image: header_photo.jpg
