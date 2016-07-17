@@ -6,7 +6,6 @@ author: Someone wooo
 categories: photography
 file_name: 2016-05-13-welcome-to-jekyll
 hero_image: header_photo.jpg
-featured: false
 ---
 Here’s a cool trick that my friend Amr Tahtawi showed me a while ago that I keep using for my light-painting pictures.
 
