@@ -1,9 +1,7 @@
 .footer {
   background-color: #e8e8e8;
-  padding: 100px 0 50px 0;
 
   .wrapper {
-    background-color: #fff;
     max-width: 750px;
     padding: 40px;
   }
@@ -14,13 +12,28 @@
     text-align: center;
     line-height: 1.8;
     max-width: 650px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     color: #69737D;
   }
 
+  &__links {
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: auto;
+  }
+
+  &__category {
+    width: 115px;
+    margin: 0 auto;
+    color: #35363a;
+
+    h3 {
+      font-weight: 700;
+    }
+  }
+
   &__social {
-    text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
 
     ul {
       margin: 0;
@@ -28,6 +41,11 @@
       li {
         display: inline-block;
         padding: 0 8px;
+        text-align: center;
+
+        &:first-of-type {
+          padding: 0;
+        }
 
         a {
           width: 40px;

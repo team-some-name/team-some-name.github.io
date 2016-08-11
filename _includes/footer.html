@@ -1,14 +1,64 @@
-<footer class="footer">
+<!-- <footer class="footer">
 
   <div class="wrapper">
     <div class="footer__description">
-      {{ site.description }}
+      {% if page.url == "/category/food/" %}
+        {{ site.description_food }}
+      {% elsif page.url == "/category/photography/" %}
+        {{ site.description_photo }}
+      {% elsif page.url == "/category/thoughts/" %}
+        {{ site.description_thoughts }}
+      {% else %}
+        {{ site.description }}
+      {% endif %}
     </div>
     <div class="footer__social">
       <ul>
         <li><a href="https://www.instagram.com/teamsomename/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
         <li><a href="/feed" class="rss" target="_blank"><i class="fa fa-rss"></i></a></li>
       </ul>
+    </div>
+  </div>
+
+</footer> -->
+
+<footer class="footer">
+
+  <div class="wrapper">
+    <div class="footer__description">
+      {% if page.url == "/category/food/" %}
+        {{ site.description_food }}
+      {% elsif page.url == "/category/photography/" %}
+        {{ site.description_photo }}
+      {% elsif page.url == "/category/thoughts/" %}
+        {{ site.description_thoughts }}
+      {% else %}
+        {{ site.description }}
+      {% endif %}
+    </div>
+
+    <div class="footer__links">
+      <div class="sitemap grid__item desk--one-half lap--one-half palm--one-half">
+        <div class="footer__category">
+          <h3>Sitemap</h3>
+          <div><a class="page-link" href="/">Home</a></div>
+          <div><a class="page-link" href="/category/food/">Food</a></div>
+          <div><a class="page-link" href="/category/photography/">Photography</a></div>
+        </div>
+      </div>
+      <div class="contact grid__item desk--one-half lap--one-half palm--one-half">
+        <div class="footer__category">
+          <h3>Team</h3>
+          <a class="page-link" href="/about/">About Us</a>
+          <a class="page-link" href="mailto:teamsomename@gmail.com">Contact</a>
+          <div class="footer__social">
+            <ul>
+              <li><a href="https://www.instagram.com/teamsomename/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="/feed" class="rss" target="_blank"><i class="fa fa-rss"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

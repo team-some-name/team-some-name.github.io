@@ -9,7 +9,10 @@
 title: TeamSomeName
 url: http://teamsomename.com
 email: your-email@domain.com
-description: Team Some Name is a collection of something something things we love something food reviews and photography something
+description: Adventures and opinions from the city of Toronto.
+description_food: Food and drink we love, plus those we love to hate.
+description_photo: A collection of places worth seeing.
+description_thoughts: Random musings from behind the keyboard.
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 gems: [jekyll-paginate]
