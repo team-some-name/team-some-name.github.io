@@ -2,24 +2,35 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
+<div class="list__posts">
+  <div class="wrapper">
+    <h1>{{ page.title }}</h1>
 
-
-<ul class="post-list">
-  {% for post in site.categories.[page.category] %}
-    <li>
-      <div class="grid--full">
-        <div class="grid__item desk--one-half">
-          <img src="/images/posts/{{post.file_name}}/{{ post.hero_image }}">
-        </div>
-        <div class="grid__item desk--one-half">
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-        </div>
-      </div>
-    </li>
-  {% endfor %}
-</ul>
+    <ul class="posts">
+      {% for post in site.categories.[page.category] %}
+        <li class="posts__item">
+          <div class="grid--full">
+            <div class="grid__item desk--two-fifths post__header-image">
+              <a href="{{ post.url | prepend: site.baseurl }}">
+                <img src="/images/posts/{{post.file_name}}/{{ post.hero_image }}">
+              </a>
+            </div>
+            <div class="grid__item desk--three-fifths post__content">
+              <div class="post__title">
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </div>
+              <div class="post__meta">
+                <span class="post__author">by {{ post.author }} &bull; </span>
+                <span class="post__category">{{ post.categories }} &bull; </span>
+                <span class="post__date">{{ post.date | date: "%b %-d, %Y" }}</span>
+              </div>
+              <div class="post__excerpt">
+                {{ post.excerpt }}
+              </div>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

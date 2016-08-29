@@ -16,7 +16,6 @@
   .wrapper {
     width: 100%;
     max-width: 1200px;
-    padding: 0 15px;
   }
 
   .logo {
@@ -60,6 +59,7 @@
   .logo {
     &--small {
       padding-top: 0;
+      padding-left: 15px;
       width: 250px;
       position: absolute;
       opacity: 1;
@@ -106,5 +106,80 @@
     &:not(:last-child) {
         margin-right: 20px;
     }
+  }
+}
+
+// For mobile hamburger menu
+.menu {
+  position: absolute;
+  right: 40px;
+
+  a {
+    display: inline-block;
+    width: 25px;
+    height: 27px;
+    cursor: pointer;
+    color: #959da0;
+    letter-spacing: .06em;
+
+    &:focus,
+    &:hover {
+      text-decoration: none;
+    }
+
+    i {
+      position: relative;
+      display: inline-block;
+      width: 25px;
+      height: 4px;
+      font: 700 12px/.4 europa,Helvetica Neue,Helvetica,Arial,sans-serif;
+      text-transform: uppercase;
+      background: #959da0;
+      -webkit-transition: all .2s ease-out;
+      transition: all .2s ease-out;
+
+      &:before {
+        top: -8px;
+      }
+
+      &:after {
+        bottom: -8px;
+      }
+
+      &:before,
+      &:after {
+        content: '';
+        width: 25px;
+        height: 4px;
+        background: #959da0;
+        position: absolute;
+        left: 0;
+        -webkit-transition: all .2s ease-out;
+        transition: all .2s ease-out;
+      }
+    }
+  }
+
+  a.active {
+    i {
+      background: transparent;
+
+      &:before {
+        top: 0;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        bottom: 0;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+
+    }
+  }
+
+  @include media-query($on-desk) {
+    display: none;
   }
 }

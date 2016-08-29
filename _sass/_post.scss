@@ -33,13 +33,33 @@
     position: relative;
     display: table-cell;
     vertical-align: bottom;
-    bottom: 75px;
-    left: 75px;
+    bottom: 15%;
+    left: 5%;
     color: #fff;
   }
 
   &__title {
-    font-size: 50px;
+    font-size: 25px;
+
+    @include media-query($on-lap) {
+      font-size: 37px;
+    }
+
+    @include media-query($on-desk) {
+      font-size: 50px;
+    }
+  }
+
+  &__date {
+    font-size: 16px;
+
+    @include media-query($on-lap) {
+      font-size: 23px;
+    }
+
+    @include media-query($on-desk) {
+      font-size: 27px;
+    }
   }
 }
 

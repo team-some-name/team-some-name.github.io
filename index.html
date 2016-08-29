@@ -1,14 +1,22 @@
 ---
 layout: default
 ---
-
-<div class="list__posts-header">
-  {% for post in site.posts limit:1 %}
-    <!-- this is for future if featured is not always first one -->
-    <img src="/images/posts/{{post.file_name}}/{{ post.hero_image }}">
-    {{ post.title }}
-  {% endfor %}
+{% for post in site.posts limit:1 %}
+<div class="hero__container">
+  <a href="{{ post.url | prepend: site.baseurl }}">
+    <div class="hero__image-container">
+      <!-- this is for future if featured is not always first one -->
+      <img class="hero__image" src="/images/posts/{{post.file_name}}/{{ post.hero_image }}">
+      <div class="image__overlay"></div>
+    </div>
+    <div class="hero__info-container">
+      <div class="hero__info">
+        <div class="hero__title">{{ post.title }}</div>
+      </div>
+    </div>
+  </a>
 </div>
+{% endfor %}
 
 <div class="list__posts">
   <div class="wrapper">
